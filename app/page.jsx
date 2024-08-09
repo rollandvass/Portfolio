@@ -1,13 +1,11 @@
-import Link from 'next/link';
-import { Button } from '../components/ui/button';
+import Image from 'next/image';
+import UnderConstructionImage from '../assets/under-construction.png';
 
 export default function Home() {
     return (
-        <>
-            <main>Landing Page Section</main>
-            <Link href="/aboutme">
-                <Button>Get started</Button>
-            </Link>
-        </>
+        <section className='flex flex-col items-center justify-center min-h-screen'>
+            <h1 className='text-2xl font-bold mb-4'>Website Under Construction!</h1>
+            <Image src={UnderConstructionImage} alt='Website Under Construction' width={500} height={300} />
+        </section>
     );
 }

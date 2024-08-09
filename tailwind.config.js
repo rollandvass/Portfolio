@@ -14,10 +14,10 @@ module.exports = {
             padding: "0.9rem",
         },
         screens: {
-            "small": "640px",
-            "medium": "768px",
-            "large": "960px",
-            "x-large": "1200px",
+            "sm": "640px",
+            "md": "768px",
+            "lg": "960px",
+            "xl": "1200px",
         },
         fontFamily: {
             primary: "var(--font-jetbrainsMono)",

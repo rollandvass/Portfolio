@@ -10,7 +10,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-    title: "Rolland | Portfolio",
+    title: "Rolland Vass | Portfolio",
     description: "Rolland's Personal Portfolio Website",
 };
 

@@ -23,7 +23,7 @@ const Home = () => {
                         <h1 className='h1 mb-6'>
                             Hello there! I'm <br /><span className='text-accent'>Rolland Vass</span>
                         </h1>
-                        <span className='text-xl'>Senior Undergraduate in Computer Science</span>
+                        <span className='text-xl'>Senior Computer Science Student</span>
                         <>
                             {
                                 links.map((link, index) => {

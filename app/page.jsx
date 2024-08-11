@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import './globals.css';
 
 import Photo from '@/components/Photo';
 
@@ -28,14 +29,11 @@ const Home = () => {
                             {
                                 links.map((link, index) => {
                                     return <Link href={link.path} key={index} className={`${link.path === pathname && "text-accent border-accent"
-                                        } mt-16 px-3 p-2 border-2 border-solid border-white text-white rounded-full capitalize font-medium hover:text-accent hover:border-accent transition-all`}>{link.name}
+                                        } mt-16 px-3 p-2 border-2 border-solid border-white text-white rounded-full capitalize font-medium hover:text-green_accent hover:border-green_accent transition-all`}>{link.name}
                                     </Link>
                                 })
                             }
                         </>
-                        {/* <Button variant='outline' size='lg' className='w-[150px] mt-[60px]'>
-                            Get Started
-                        </Button> */}
                     </div>
 
                     <span>
@@ -43,7 +41,11 @@ const Home = () => {
                     </span>
                 </div>
             </div>
-        </section>
+            <div className='container mx-auto mt-20'>
+                <p className='text-center text-white text-sm py-4'>
+                    © {new Date().getFullYear()} <span className='text-green_accent'>Rolland Vass.</span> All rights reserved.</p>
+            </div>
+        </section >
     );
 };
 

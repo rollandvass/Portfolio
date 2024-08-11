@@ -1,7 +1,7 @@
 "use client";
 
 import Image from 'next/image';
-import MyPhoto from '../public/assets/me2.png';
+import MyPhoto from '../public/assets/me.jpeg';
 
 const Photo = () => {
     return (
@@ -12,7 +12,7 @@ const Photo = () => {
                     boxShadow: 'inset 0 0 25px 10px rgba(187, 134, 252, 0.5)'
                 }}
             >
-                <Image src={MyPhoto} priority quality={100} fill alt='' className='object-contain rounded-full p-6' />
+                <Image src={MyPhoto} priority quality={100} fill alt='' className='object-contain drop-shadow-2xl rounded-full p-8' />
             </div>
         </div>
     );

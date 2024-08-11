@@ -18,4 +18,28 @@
   .h3 {
     @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
   }
+  /* Customize for WebKit browsers (Chrome, Safari, etc.) */
+  ::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #121212; /* Track background */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #cccccc; /* Scrollbar color */
+    border-radius: 25px; /* Scrollbar rounded edges */
+    border: 1px solid #121212; /* Space around the scrollbar thumb */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #161616; /* Scrollbar color on hover */
+  }
+
+  /* Customize for Firefox */
+  * {
+    scrollbar-width: thin; /* Scrollbar width */
+    scrollbar-color: #cccccc #121212; /* Scrollbar thumb and track color */
+  }
 }

@@ -29,6 +29,10 @@ module.exports = {
                     DEFAULT: '#bb86fc',
                     hover: '#a861ff',
                 },
+                green_accent: {
+                    DEFAULT: '#5ce65c',
+                    hover: '#008000',
+                },
             },
             keyframes: {
                 "accordion-down": {
